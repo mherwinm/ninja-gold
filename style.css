@@ -1,0 +1,72 @@
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 600px;
+}
+
+.game-detail {
+    display: block;
+    border: 1px solid green;
+    text-align: center;
+    width: 200px;
+    height: 400px;
+}
+
+.total .input {
+    border: none;
+}
+
+.game-screen {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid orangered;
+    width: 795px;
+    height: 400px;
+}
+
+.place {
+    border: 1px solid brown;
+    width: 196px;
+    height: 250px;
+}
+
+.
+#ninja-container {
+    width: 100px;
+    height: 160px;
+}
+
+.ninja {
+    width: 100px;
+    height: 150px;
+}
+
+
+.game-log {
+    display: block;
+    overflow: auto;
+    border: 1px solid blue;
+    width: 1000px;
+    height: 200px;
+
+}
+
+.log {
+    font-size: 24px;
+    padding: 0px;
+    font-weight: bold;
+    width: 940px;
+}
+
+.log-list {
+    width: 940px;
+}
+
+#cave, #house, #gold-mine, #casino {
+    width: 190px;
+    height: 250px;
+
+}
+

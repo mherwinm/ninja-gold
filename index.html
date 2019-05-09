@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game-detail">
+            <div class="title">
+                <h2>NINJA GOLD</h2>
+            </div>
+            <div class="tries">
+                <p>Remaining moves: </p>
+                <p class="numtry">20</p>
+            </div>
+            <div class="total">
+                <p>Total: </p>
+                <p id="gold">0</p>
+            </div>
+            <div class="reset-key">
+                <input class="reset" type="button" value="Reset">
+            </div>
+        </div>   <!--end of GD-->
+        <div class="game-screen">
+            <div class="place">
+                <button id="cave">CAVE</button>
+            </div>
+            <div class="place">
+                <button id="house">HOUSE</button>
+            </div>
+            <div class="place">
+                <button id="gold-mine">GOLD MINE</button>
+            </div>
+            <div class="place">
+                <button id="casino">CASINO</button>
+            </div>
+            <div id="ninja-container">
+                <a href=""><img src="ninja.png" class="ninja" alt="ninja"></a>
+            </div>
+        </div> <!--end of GS-->
+        <div class="game-log">
+            <div class="log">
+                <p>Location/ Total Gold/ Gain / Loss</p>
+            </div>
+            <div class="log-list">
+                <ol>
+                </ol>
+            </div>
+        </div> <!--end of GL-->
+    </div>
+</body>
+</html>
