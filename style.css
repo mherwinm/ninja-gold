@@ -1,72 +1,144 @@
 .container {
-    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
-    height: 600px;
+    width: 1600px!important;
+    height: 500px!important;
+    margin-top: 20px;
+    margin-left: 90px;
+    max-width: 1600px;
 }
 
 .game-detail {
+    background-color: #edeff1;
+    background-image: url(side-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 250px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
     display: block;
-    border: 1px solid green;
     text-align: center;
-    width: 200px;
-    height: 400px;
+    width: 198px;
+    height: 420px;
+}
+
+#gold {
+    font-weight: bold;
 }
 
 .total .input {
     border: none;
 }
 
+a button {
+    border: 1px solid black;
+    background-color: red;
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    color: black;
+
+}
+
 .game-screen {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -195px;
+    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid orangered;
     width: 795px;
-    height: 400px;
+    height: 420px;
 }
 
 .place {
-    border: 1px solid brown;
     width: 196px;
     height: 250px;
 }
 
-.
-#ninja-container {
-    width: 100px;
-    height: 160px;
-}
-
-.ninja {
-    width: 100px;
+.place-icon {
+    width: 190px;
     height: 150px;
-}
-
-
-.game-log {
-    display: block;
-    overflow: auto;
-    border: 1px solid blue;
-    width: 1000px;
-    height: 200px;
-
-}
-
-.log {
-    font-size: 24px;
-    padding: 0px;
-    font-weight: bold;
-    width: 940px;
-}
-
-.log-list {
-    width: 940px;
+    margin-top: 30px;
 }
 
 #cave, #house, #gold-mine, #casino {
     width: 190px;
-    height: 250px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #21e621;
+    color: black;
+    font-weight: bold;
+    border: 2px solid brown;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+
+#ninja-container {
+    width: 100px;
+    height: 165px;
+}
+
+.ninja {
+    width: 100px;
+    height: 165px;
+}
+
+
+.game-log {
+    background-color: #edeff1;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-right: 1px;
+    display: block;
+    overflow: auto;
+    width: 39   0px;
+    height: 420px;
 
 }
+
+.nav li {
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+ol {
+    counter-reset: number;
+    list-style-type: none;
+  }
+  
+  /* The "\a0" is a space */
+  ol li::before {
+    counter-increment: number;
+    content: counter(number)"\a0";
+  }
+
+  .tab-pane h4, .tab-pane h6, .tab-pane p, #total-gain p, #total-gain h5, #total-loss p, #total-loss h5 {
+      margin-left: 20px;
+  }
+
+  .misc {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1400px;
+  }
+
+  .about {
+      width: 400px;
+      margin: 0px 30px 30px 30px;
+      margin-top: 20px;
+  }
+
+  .ads {
+      width: 100px;
+      margin-top: 20px;
+  }
+  
+
+
 

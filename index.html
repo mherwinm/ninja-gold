@@ -3,8 +3,10 @@
 <head>
     <meta charset ="utf-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -14,43 +16,103 @@
                 <h2>NINJA GOLD</h2>
             </div>
             <div class="tries">
-                <p>Remaining moves: </p>
+                <p>Remaining Moves: </p>
                 <p class="numtry">20</p>
             </div>
             <div class="total">
-                <p>Total: </p>
-                <p id="gold">0</p>
+                <p>Total Gold: </p>
+                <p id="gold">   0</p>
             </div>
             <div class="reset-key">
-                <input class="reset" type="button" value="Reset">
+                <a href="index.html"><button>Reset</button></a>
             </div>
         </div>   <!--end of GD-->
         <div class="game-screen">
             <div class="place">
                 <button id="cave">CAVE</button>
+                <img class="place-icon" src="cave.png">
             </div>
             <div class="place">
                 <button id="house">HOUSE</button>
+                <img class="place-icon" src="house.png">
             </div>
             <div class="place">
-                <button id="gold-mine">GOLD MINE</button>
+                 <button id="gold-mine">GOLD MINE</button>
+                 <img class="place-icon" src="gold-mine.png">
             </div>
             <div class="place">
                 <button id="casino">CASINO</button>
+                <img class="place-icon" src="casino.png">
             </div>
             <div id="ninja-container">
-                <a href=""><img src="ninja.png" class="ninja" alt="ninja"></a>
+                <img src="ninja.png" class="ninja" alt="ninja">
             </div>
         </div> <!--end of GS-->
         <div class="game-log">
-            <div class="log">
-                <p>Location/ Total Gold/ Gain / Loss</p>
+            <ul class="nav nav-pills">
+                <li><a data-toggle="pill" href="#status">Status</a></li>
+                <li><a data-toggle="pill" href="#total-gain">Total Gains</a></li>
+                <li><a data-toggle="pill" href="#total-loss">Total Losses</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="status" class="tab-pane in active">
+                    <h4>STATUS</h4>
+                    <h6>Attempt No./Location/Current Gold/Gain/Loss</h6>
+                    <ol>
+                    </ol>
+                </div>
+                <div id="total-gain" class="tab-pane">
+                    <h4>GAIN</h4>
+                    <h6>Attempt No./Location/Gain</h6>
+                    <ol></ol>
+                    <h5>Total Gain:<p>0</p></h5>
+
+                </div>
+                <div id="total-loss" class="tab-pane">
+                    <h4>LOSS</h4>
+                    <h6>Attempt No./Location/Loss</h6>
+                    <ol></ol>
+                    <h5>Total Loss:<p>0</p></h5>
+                </div>
+            </div>
+
+            <!--<div class="log">
+                <p>Attempt no. / Location / Total Gold / Gain / Loss</p>
             </div>
             <div class="log-list">
                 <ol>
                 </ol>
-            </div>
+            </div>-->
         </div> <!--end of GL-->
+        <div class="misc"> <!--instructions-->
+            <div class="about">
+                <h4>How to Play the Game</h4>
+                <ul>
+                    <li>Our main character is a ninja in search for gold. He can find gold in 4 different places: the cave, the house, the gold mine and at the casino.</li>
+                    <li>The player will choose between the 4 places.</li>
+                    <li>By clicking the button above the place, A pop-up will appear and display what happened.</li>
+                    <li>The player has 20 moves to gain gold.</li>
+                    <li>To win the game, the player must get a total of 250 gold.</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h4>Probability and Breakdown</h4>
+                <ul>
+                    <li>cave 100% + 5 gold</li>
+                    <li>house 80% + 10 gold</li>
+                    <li>gold mine 80% + 1 - 25 gold (random)</li>
+                    <li>casino 50% (+ OR -) 40 - 50 gold (random)</li>
+                </ul>
+                <h4>NOTE:</h4>
+                <p><em>Some text changes color</em><br>
+                BLACK means you gain nothing (+0 gold)<br>
+                GREEN means you gain additional gold<br>
+                RED means you loss some gold</p>
+            </div>
+            <div class="ads">
+                <img src = "bg-ninja.gif">
+            </div>
+        </div>
     </div>
 </body>
 </html>
